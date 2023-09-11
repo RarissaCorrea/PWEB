@@ -1,0 +1,80 @@
+.div-simples {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.Cores{
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 420px) {
+    .div-simples {
+        background-color: gray;
+    }
+
+    .Cores::after {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .div-simples {
+        background-color:orange;
+    }
+
+    .Cores::after {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .div-simples {
+        background-color: rgb(233, 53, 137);
+    }
+
+    .Cores::after {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .div-simples {
+        background-color:red;
+    }
+
+    .Cores::after {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .div-simples {
+        background-color:purple;
+    }
+
+    .Cores::after {
+        content: "Roxo";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .div-simples {
+        background-color:yellow;
+    }
+
+    .Cores::after {
+        content: "Amarelo";
+    }
+}
+
+@media (min-width: 1921px) {
+    .div-simples {
+        background-color:brown;
+    }
+
+    .Cores::after {
+        content: "Marrom";
+    }
+}
